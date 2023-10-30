@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>宣告提升 Hoisting</title>
+<script>
+/*
+var x; //宣告變數
+x=10;  //給定初始資料
+alert(x); //使用變數
+*/
+function test(){        //函式的宣告
+   alert("HELLO");
+}
+test();//呼叫函式
+
+var test2=function(){   //函式的宣告方法二
+    alert("HELLO WORLD");
+}
+test2();//呼叫函式
+
+</script>
+</head>
+<body>
+</body>
+</html>

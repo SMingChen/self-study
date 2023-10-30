@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Canvas</title>
+<script type="text/Javascript">
+    window.onload=function(){
+        var cvs=document.getElementById("cvs");
+        var ctx=cvs.getContext("2d");   //Canvas Context Object
+        //Fill 填滿
+        ctx.fillStyle="red";            //方塊變色
+        ctx.globalAlpha=0.5;            //方塊透明度 0~1  1是不透明 0是全透明
+        ctx.fillRect(50,50,100,100);    //方塊位置
+
+        //Stroke 描邊
+        ctx.globalAlpha=1;
+        ctx.strokeStyle="blue";
+        ctx.strokeRect(200,200,50,50);
+
+        //Path  路徑
+        ctx.beginPath();          //開始建立路徑
+        ctx.moveTo(200,100);      //移動當前所在位置
+        ctx.lineTo(300,300);      //拉線
+        ctx.closePath();          //關閉路徑
+        ctx.stroke();             //路徑描邊   cxt.fill();
+        
+        //利用路徑畫出多邊形
+        ctx.beginPath();
+        ctx.moveTo(300,300);
+        ctx.lineTo(400,350);
+        ctx.lineTo(250,400);
+        ctx.closePath(); 
+        ctx.fill();
+    }
+</script>
+</head>
+<body>
+<canvas id ="cvs" width="800" height="600" style="border: 1px solid #000000;"></canvas>
+</body>
+</html>

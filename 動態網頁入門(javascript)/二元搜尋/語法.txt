@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initail-scale=1, maximum-scale=1" />
+    <meta charset="utf-8" />
+    <title>二次搜尋法</title>
+    </head>
+    <body>
+    <h3>搜尋演算法測試</h3>
+    <button onclick="test();">測試</button>
+    <script>
+        function test(){
+            /*
+            //基本測試
+            let data = [3, 8, 2, 12, 10];
+            let index=linearSearch(data,10);
+            console.log("搜尋結果",index);
+            */
+            /*
+            let data = [2, 3, 8, 10, 12];
+            console.log("搜尋結果  2",binarySearch(data,2));
+            console.log("搜尋結果  8",binarySearch(data,8));
+            console.log("搜尋結果  12",binarySearch(data,12));
+            console.log("搜尋結果  5",binarySearch(data,5));
+            console.log("搜尋結果  1",binarySearch(data,1));
+            console.log("搜尋結果  15",binarySearch(data,15));
+            */
+
+            //準備大型測試資料[0, 2, 4, 6, 8, 10, ....]
+            let largeData=[];
+            for (let i=0; i<100000000;i++){ //測試一億筆
+                largeData.push(i*2);
+            }
+            //比較運作效率 linearSearch
+            console.log("線性所花得時間");
+            console.time();
+            console.log("搜尋500001所需時間",linearSearch(largeData,500001));
+            console.timeEnd();
+
+            console.log("--------------------------");
+
+            //比較運作效率 binarySearch  
+            console.log("二元所花得時間2");
+            console.time();
+            console.log("搜尋500001所需時間",binarySearch(largeData,500001));
+            console.timeEnd();
+        }
+        //實作線性搜尋
+        function linearSearch(arr, target){
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]===target){  //比對到了，回傳資料在陣列的位置ｉ
+                   return i;
+                }
+            }
+            //迴圈全部跑完都沒比對到回傳-1
+            return -1;
+        }
+        //實作二元搜尋
+        function binarySearch(arr, target){
+            let startIndex = 0
+            let endIndex = arr.length-1;
+            
+            while (endIndex >=startIndex){  //如果結束位置大或等於開頭位置，就表示沒找到最後一個繼續找
+                let minIndex = Math.floor((startIndex+endIndex)/2);
+                if (target===arr[minIndex]){   //比對到了,就是答案，回傳陣列中位置　midIndex
+                    return minIndex;
+                }else if(target>arr[minIndex]){ //要找的資料比中間數字大，找右邊區段
+                    startIndex = minIndex+1;
+                }else{ // 要找的數字比中間小，找左邊區段
+                    endIndex = minIndex-1;                
+                }
+           }
+           //迴圈都跑完沒比對到
+           return -1;
+        }
+</script>
+</body>
+</html>

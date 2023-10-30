@@ -1,0 +1,5 @@
+電腦中設定的資料夾：Desktop\www\網頁檔案
+伺服器的網址：http://127.0.0.1:8887/網頁檔案
+
+電腦中設定的資料夾：Desktop\www\homepage.html
+伺服器的網址：http://127.0.0.1:8887/homepage.html
