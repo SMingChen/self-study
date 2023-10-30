@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <!--
+	 /*說明是用CSS  在{}面前定義說明*/
+	 /*position:absolute  絕對定位  left(左邊) right(右邊) top(上面) 不管隨意移動*/
+	 /*position:relative  相對定位  left(左邊) right(右邊) top(上面) 以原始位置當基準點移動*/
+	 -->
+     <meta charset="utf-8"></meta>
+     <title>CSS 教學</title>
+	 <style type="text/css">   
+	 .title{font-weight:bold;font-size:30px}
+	 .content{width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px}
+	 .box{
+	      position:relative;left:200px;top:50px;           
+	      width:100px;height:100px;background-color:blue
+     }
+     </style>
+</head>
+<body>
+     <div class="title">今天天氣真的不賴</div>
+	 
+	 <div class="content">我知道你很難過，<span>你不難過嗎?</span><br>
+	      沒關西悲傷我一個人來扛
+	 </div>
+ 
+     <div class="box"></div>
+
+     <div style="font-weight:bold;font-size:20px">今天天氣不錯</div>   <!--div代表區塊(會斷行)  font-weight:bold設定文字是粗體字 font-size設定文字20PX-->
+	 <div >我去公園散步，餵<span style="color:red">鴿子</span></div>    <!--color設定顏色 span代表區塊(不會斷行) -->
+	 <div style="margin-top:10px;margin-bottom:10px">我去公園散步</div>   <!--margin設定兩個區塊的距離 top(上方) bottom(下方)-->
+	 <div style="padding:10px;border:1px solid blue">旁邊玩沙</div>   <!--padding框架  border區塊邊框寬度 邊框樣式(solid(單實線),dashed(虛線)) 邊框顏色-->
+	 <div style="width:400px;height :200px">
+	      QQ斯咪搭<br/>
+	      大家都很可愛  
+	 </div>  
+	 <!--width寬度 height高度 <br>換行-->
+	 
+	 <div style="font-weight:bold;font-size:20px">公園裡有很多小朋友<span style="position:relative;top:-5px">平方</span></div>
+     <div style="width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px">
+	      大家都在此玩耍
+	 </div>
+	 
+	 
+</body>
+</html>

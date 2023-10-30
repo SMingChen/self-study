@@ -1,0 +1,116 @@
+.p{
+    color:red;
+    background-color:aquamarine;
+   }
+.food{
+    color:aqua;
+  }
+.person{
+    color:aquamarine;
+  }
+.background{
+    background-color: gray;
+}
+
+#css-h1{
+    color:yellow;
+}
+h2{
+  background-color: gray;
+}
+/*多種方式備註*/
+.class-1,#id-1{
+  background-color: aqua;
+}
+ul li{
+  background-color: deeppink;
+}
+ul li a{
+  background-color: green;
+}
+/*屬性編輯*/
+[type]{
+  background-color: brown;
+}
+/*hover 滑鼠移到位置*/
+h1:hover{
+  background-color: aqua;
+}
+/*預設顯示直的  flex調整成橫的*/
+/*flex-wrap 寬度不夠會自動換行*/
+/*flex-direction : column 主軸由上至下 */
+/*flex-direction : column-reverse 主軸由下至上 */
+/*flex-direction : row 主軸由左至右 */
+/*flex-direction : row-reverse 主軸由右至左 */
+/*justify-content: center 可以將區塊放到主軸中間*/
+/*justify-content: flex-start 可以將區塊放到主軸開始區塊*/
+/*justify-content: flex-end 可以將區塊放到主軸結束區塊*/
+/*justify-content: space-around 可以將區塊放到主軸分隔區塊*/
+/*justify-content: space-between 可以將區塊放到主軸夾在區塊*/
+/*justify-content: space-evenly 可以將區塊放到主軸平均分配區塊*/
+/*align-items: center 主軸至中*/
+/*align-content: center 次軸至中*/
+.container{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     height: 300px;
+     border: 1px dashed red;
+     justify-content:space-evenly;
+     align-items: center;
+
+}
+.container div{
+  border: 1px solid rgb(202,201,201);
+  padding: 10px;
+  width:100px;
+  height: 20px;
+}
+
+/*flex 將畫面做區分*/
+/*order 由小到大由左至右排序*/
+.box-1{
+   /*flex: 2;*/
+   /*order: 1;*/
+}
+
+.box-2{
+   /*flex: 1;*/
+   /*order: 2;*/
+}
+
+.box-3{
+   /*flex: 1;*/
+   /*order: 3;*/
+}
+
+@keyframes change-color{
+  /*
+  from{background-color: red;}
+  to{background-color: green;}
+  */
+  0%{background-color: red; top: 10px; left: 10px;}
+  20%{background-color: orange; top: 20px; left: 20px;}
+  40%{background-color: yellow; top: 30px; left: 30px;}
+  60%{background-color: green; top: 40px; left: 40px;}
+  80%{background-color: blue; top: 50px; left: 50px;}
+  100%{background-color: purple; top: 60px; left: 60px;}
+}
+
+.box{
+   width: 200px;
+   height: 200px;
+   background-color: gray;
+   position: fixed;
+}
+
+/*animation-name 呼叫keyframes*/
+/*animation-duration 執行時間*/
+/*animation-iteration-count 循環次數 但若打infinite 則無限次*/
+/*animation-delay 網頁開啟延遲多久跑動*/
+.box-animation{
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay:1s;
+}
