@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>網頁</title>
+    <!--引用外部css檔案-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- css -->
+    <!-- color 顏色 font-size 字大小 background-color 背景顏色 border(像素,線型(solid 實線,dashed 虛線),顏色) 邊框 max-width 最大寬度 -->
+    <div style="color:aqua; font-size: 20px;">
+        <h1 style="color:blue;">css教學</h1>
+        <p style="background-color: green;">這是一個</p>
+        <p style="border: 5px solid #000000; max-width: 800px;">邊框</p>
+    </div>
+
+    <!-- color 顏色 -->
+    <div style="color:rgb(255, 0, 157);">
+        <h1>css color教學</h1>
+    </div>
+
+    <!-- Padding(內) & border(中) & margin(外)  教學 -->
+    <!-- padding 上 右 下 左 -->
+    <!-- margin 可以填寫負數其餘不可 -->
+    <div>
+        <h1>Padding & maring 教學</h1>
+        <p style="padding:20px 30px 20px 30px;margin:20px; background-color:lightblue; border:1px dashed #000000">測試</p>
+    </div>
+
+    <!-- float & display -->
+    <!-- float left 漂浮在左邊 right 漂浮在右邊 -->
+    <img src="pic.jpg" width="200px" style="float:left;"/>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempore voluptates cumque deleniti culpa temporibus similique unde voluptatem accusamus, magni exercitationem eligendi quos dignissimos dicta voluptate magnam sapiente fuga fugiat. </p>
+    <!-- <P>預設顯示方式 block   <span>預設顯示方式 inline -->
+    <p style="display:inline">你好</p>
+    <span>哈哈</span>
+    <span>span1</span>
+
+    <!-- position -->
+    <!-- fixed固定定位  relative相對定位 absolute絕對定位-->
+    <h1>position教學</h1>
+    <div style="position:relative; width:80px; height:80px; background:blue;"></div>
+    <div style="width:120px; height:120px; background:red;"></div>
+    <br/>
+    <div style="position:relative; padding:30px; border: 5px solid red;">
+        <div style="padding:30px; border:5px solid red">
+            <div style="position: absolute ; bottom: 0px; width: 40px; height: 40px; background-color: blue;"></div>
+        </div>
+    </div>
+
+    <!-- opacity & border-radius -->
+    <!-- opacity 透明度設設定 範圍0~1-->
+    <!-- border-radius 調整四邊角圓弧度 也可以各角各不同弧度-->
+    <h1>opacity & border-radius 教學</h1>
+    <p style="position:relative; top:65px; left:25px;">你好</p>
+    <div style="border-radius:10px;  width: 80px; height: 80px; background-color: blue; opacity: 0.5;"></div>
+
+    <!-- style 標籤 -->
+    <h1>style 標籤</h1>
+    <p style="color: red;">麻婆豆腐真好吃</p>
+    <p style="color: aqua;">麻婆豆腐真好吃</p>
+    <p style="color: palegreen;">麻婆豆腐真好吃</p>
+    <p style="color: gray;">麻婆豆腐真好吃</p>
+    <p style="color: green;">麻婆豆腐真好吃</p>
+    <p class="p">麻婆豆腐真好吃</p>
+
+    <!-- class & id 標籤 -->
+    <!-- id唯一識別碼 class可以引用多個-->
+    <h1 id="css-h1">style 標籤</h1>
+    <p class="food background">麻婆豆腐小辣</p>
+    <p class="food">肋眼牛排三分熟</p>
+    <p class="food">清茶加珍珠微微</p>
+    <p class="person">蔡英文</p>
+    <p class="person">馬英九</p>
+    <p class="person">陳水扁</p>
+
+    <!-- 更多套用CSS的方法 -->
+    <h1>css教學</h1>
+    <p class="class-1">這是第一個段落</p>
+    <p class="class-1">這是第二個段落</p>
+    <h2 id="id-1">小白你好呀</h2>
+    <h2>小黑擬好挖</h2>
+    <ul>
+        <li><a href="https//:google.com">google</a></li>
+        <li>facebook</li>
+        <li>ig</li>
+    </ul>
+    <input type="text">
+    <br/>
+    <input type="password">
+
+    <!-- flex -->
+    <div class="container">
+        <div class="box-1">區塊1</div>
+        <div class="box-2">區塊2</div>
+        <div class="box-3">區塊3</div>
+    </div>
+
+    <!-- animation -->
+    <h1>css教學</h1>
+    <div class="box box-animation"></div>
+
+</body>
+</html>
