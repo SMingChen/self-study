@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript教學</title>
+    <script type="text/JavaScript">
+//內建函式
+//alert("hello world");     
+
+//函式基礎
+//設計階段
+/*
+function add(message,message2){
+    //函式本體
+    alert(message+message2);
+    return message+message2;
+}
+*/
+
+//呼叫/使用階段
+/*
+var resullt=add(3,4)*add(5,2);
+alert(resullt);
+*/
+//整合範例
+function getsum(x) {
+    var sum=0;
+    var n=1;
+    while(n<=x){
+       sum+=n;
+       n++;
+    }
+    alert(sum)
+    return sum   
+}
+var result=getsum(50)*getsum(100);
+alert(result)
+
+    </script>
+</head>
+<body>
+</body>
+</html>

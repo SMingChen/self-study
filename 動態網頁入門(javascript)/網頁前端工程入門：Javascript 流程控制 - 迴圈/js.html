@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript教學</title>
+    <script type="text/JavaScript">
+/*
+   while(判斷){
+       若判斷的結果是正確的(true)，執行大括號區塊中的程式碼
+
+       程式碼執行完成，回到上方while的位置，做第二次判斷
+       直到判斷結果是錯誤的(false)，才跳離整個迴圈結構
+   } 
+*/
+/*
+var result=0;
+var i=1;
+while(i<=4){
+    result=result+i;  //result+=i;
+    i++;
+}
+alert(result);
+*/
+
+/*
+   for(初始區塊;判斷;迴圈區塊){
+       判斷概念同 while迴圈
+       請在講解中，注意 初始區塊與迴圈區塊 的執行時機 
+   } 
+*/
+/*
+var result=0;
+for(var i=1;i<=100;i++){
+    result+=i;  //result=result+i;
+}
+alert(result);
+*/
+
+/*
+  break;      強制跳出迴圈
+  continue;   強制進行下一次迴圈;
+*/
+/*
+var n = 0;
+  while(n<=100){
+      if(n==50){
+          break;
+      }
+      n++;
+  }
+  alert(n);
+*/
+
+var x=0;
+for(var n=0;n<=100;n++){
+      if(n%4==0){   //n%4 就是n除以四餘數剩0
+          continue;
+      }
+      x++;
+  }
+  alert(x);
+
+    </script>
+</head>
+<body>
+</body>
+</html>
